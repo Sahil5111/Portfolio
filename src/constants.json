@@ -1,0 +1,65 @@
+{
+    "navbar": {
+        "name": "Sahil",
+        "navitem": [
+            {
+                "id": 0,
+                "value": "Home"
+            },
+            {
+                "id": 1,
+                "value": "About"
+            },
+            {
+                "id": 2,
+                "value": "Portfolio"
+            },
+            {
+                "id": 3,
+                "value": "Contact"
+            }
+        ],
+        "logo": "./logo.svg"
+    },
+    "header": {
+        "name": "Sahil",
+        "desc": "FRONTEND WEB DEVELOPER"
+    },
+    "about": {
+        "data": [
+            {
+                "para": 1,
+                "value": "Hi there! My name is Sahil, and I'm a web developer with a passion for creating clean and user-friendly websites. While I'm relatively new to the field, I've spent the last few years honing my skills and learning everything I can about web development."
+            },
+            {
+                "para": 2,
+                "value": "I've been working on various personal projects and collaborating with other developers to gain hands-on experience in front-end and back-end development. I'm proficient in HTML, CSS, JavaScript, and React, and I'm always eager to learn new technologies and frameworks."
+            },
+            {
+                "para": 3,
+                "value": "What sets me apart as a developer is my attention to detail and my commitment to creating websites that are both beautiful and functional. I believe that a great website should be easy to navigate, visually appealing, and responsive on all devices."
+            },
+            {
+                "para": 4,
+                "value": "I'm excited to work with clients who share my passion for creating great websites and to help bring their visions to life. If you're interested in working with me, please don't hesitate to contact me!"
+            }
+        ]
+    },
+    "footer":[
+        {
+            "id":0,
+            "link":"https://www.instagram.com/printf_sahil_/",
+            "image":"./assets/social/Instagram.svg"
+        },
+        {
+            "id":1,
+            "link":"https://github.com/Sahil5111",
+            "image":"./assets/social/GitHub.svg"
+        },
+        {
+            "id":2,
+            "link":"https://www.linkedin.com/in/SahilSingh03122003",
+            "image":"./assets/social/LinkedIn.svg"
+        }
+    ]
+}
