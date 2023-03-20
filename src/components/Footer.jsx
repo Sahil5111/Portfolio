@@ -3,10 +3,11 @@ import React from "react"
 
 function Footer({data}) {
     return (
-        <div className="container sm:px-16 px-7 sm:py-16 py-10">
+        <div className="Footer container1 ">
         <footer className="footer">
-            <div className="social-links m-auto ml-sm-auto flex place-content-center gap-4">
-                {data.map(handle=>(<a key={handle.id} href={handle.link} className="link"><i style={{backgroundImage:`url(${handle.image})`}}></i></a>))}
+            <div className="m-auto ml-sm-auto flex place-content-center gap-4">
+                {data.map(handle=>(<a key={handle.id} href={handle.link} 
+                className="p-0 h-[40px] w-[40px] rounded-full border-2 text-center grid place-content-center border-indigo-800 hover:bg-[#695aa6] hover:border-transparent bg-cover bg-center" ><img src={handle.image} alt="#" /></a>))}
             </div>
         </footer>
     </div>

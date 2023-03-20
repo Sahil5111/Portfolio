@@ -45,21 +45,120 @@
             }
         ]
     },
-    "footer":[
+    "portfolio": [
         {
-            "id":0,
-            "link":"https://www.instagram.com/printf_sahil_/",
-            "image":"./assets/social/Instagram.svg"
+            "id": 0,
+            "image": "assets/imgs/folio-1.jpg",
+            "h4": "Three JS",
+            "p": "Solar System Model",
+            "url": "https://63ad5bd7ce63a77a2ab59706--regal-marzipan-ccf6cd.netlify.app/"
         },
         {
-            "id":1,
-            "link":"https://github.com/Sahil5111",
-            "image":"./assets/social/GitHub.svg"
+            "id": 1,
+            "image": "assets/imgs/f2.jpg",
+            "h4": "Django",
+            "p": "Real Time Chatting App",
+            "url": "https://github.com/Sahil5111/SocketChat"
         },
         {
-            "id":2,
-            "link":"https://www.linkedin.com/in/SahilSingh03122003",
-            "image":"./assets/social/LinkedIn.svg"
+            "id": 2,
+            "image": "assets/imgs/ss.jpg",
+            "h4": "React",
+            "p": "Game of Tenzies",
+            "url": "https://638c591f8856275a8062c226--bespoke-banoffee-e5e793.netlify.app/"
+        }
+    ],
+    "tools": [
+        {
+            "id": 0,
+            "type": "web",
+            "list": [
+                {
+                    "name": "HTML",
+                    "url": "assets/tech/html.png"
+                },
+                {
+                    "name": "CSS",
+                    "url": "assets/tech/css.png"
+                },
+                {
+                    "name": "JS",
+                    "url": "assets/tech/javascript.png"
+                },
+                {
+                    "name": "React",
+                    "url": "assets/tech/reactjs.png"
+                },
+                {
+                    "name": "Django",
+                    "url": "assets/tech/Django.svg"
+                },
+                {
+                    "name": "Node",
+                    "url": "assets/tech/nodejs.png"
+                },
+                {
+                    "name": "MongoDB",
+                    "url": "assets/tech/mongodb.png"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "type": "other",
+            "list": [
+                {
+                    "name": "Flutter",
+                    "url": "assets/tech/flutter.svg"
+                },
+                {
+                    "name": "godot",
+                    "url": "assets/tech/godot.svg"
+                },
+                {
+                    "name": "Tailwind",
+                    "url": "assets/tech/tailwind.png"
+                },
+                {
+                    "name": "Three",
+                    "url": "assets/tech/threejs.svg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "type": "Extra",
+            "list": [
+                {
+                    "name": "Git",
+                    "url": "assets/tech/git.png"
+                },
+                {
+                    "name": "Blender",
+                    "url": "assets/tech/blender.svg"
+                },
+                {
+                    "name": "Gimp",
+                    "url": "assets/tech/gimp.svg"
+                }
+            ]
+        }
+    ],
+    "footer": [
+        {
+            "id": 0,
+            "link": "https://www.instagram.com/printf_sahil_/",
+            "image": "./assets/social/Instagram.svg"
+        },
+        {
+            "id": 1,
+            "link": "https://github.com/Sahil5111",
+            "image": "./assets/social/GitHub.svg"
+        },
+        {
+            "id": 2,
+            "link": "https://www.linkedin.com/in/SahilSingh03122003",
+            "image": "./assets/social/LinkedIn.svg"
         }
     ]
 }
