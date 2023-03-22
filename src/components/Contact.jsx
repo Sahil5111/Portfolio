@@ -12,25 +12,41 @@ function Contact() {
         setform(form => ({ ...form, [e.target.name]: e.target.value }))
     }
 
+    function ValidateEmail(input) {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (input.match(validRegex)) {
+          return true;
+        } else {
+          alert("Invalid email address!");
+          return false;
+        }
+      }
+
     function handleSubmit(e) {
         e.preventDefault()
-        emailjs.send(
-            keys[0],
-            keys[1],
-            {
-                from_name: form.Name,
-                to_name: 'Sahil',
-                from_email: form.Email,
-                to_email: 'sahilsingh7977@gmail.com',
-                message: form.Comment
-            },
-            keys[2]).then(() => {
-                alert('Thank you. for Contacting me I will get back to you as soon as possible.')
-                setform({ 'Name': '', 'Email': '', 'Comment': '' })
-            }).catch(error=>{
-                console.log(error);
-                alert('Something went wrong.')
-            })
+        if (form.Name == '' || form.Email == '' || form.Comment == '') {
+            alert('You probably forgot to add some field.')
+            return
+        }
+        if(ValidateEmail(form.Email)){
+            emailjs.send(
+                keys[0],
+                keys[1],
+                {
+                    from_name: form.Name,
+                    to_name: 'Sahil',
+                    from_email: form.Email,
+                    to_email: 'sahilsingh7977@gmail.com',
+                    message: form.Comment
+                },
+                keys[2]).then(() => {
+                    alert('Thank you. for Contacting me I will get back to you as soon as possible.')
+                    setform({ 'Name': '', 'Email': '', 'Comment': '' })
+                }).catch(error => {
+                    console.log(error);
+                    alert('Something went wrong.')
+                })
+        }
     }
 
     return (

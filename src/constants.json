@@ -142,6 +142,48 @@
                     "url": "assets/tech/gimp.svg"
                 }
             ]
+        },
+        {
+            "id": 3,
+            "type": "fallback",
+            "list": [
+                {
+                    "name": "React",
+                    "url": "assets/tech/reactjs.png",
+                    "position":[0,0,1],
+                    "rotation":[0, 0, 0]
+                },
+                {
+                    "name": "Django",
+                    "url": "assets/tech/Django.svg",
+                    "position":[0,0,-2],
+                    "rotation":[0, 3.141592653589793, 0]
+                },
+                {
+                    "name": "Node",
+                    "url": "assets/tech/nodejs.png",
+                    "position":[0,2,0],
+                    "rotation":[1.5707963267948966, 0, 0]
+                },
+                {
+                    "name": "MongoDB",
+                    "url": "assets/tech/mongodb.png",
+                    "position":[0,-2,0],
+                    "rotation":[-1.5707963267948966, 0, 0]
+                },
+                {
+                    "name": "Blender",
+                    "url": "assets/tech/blender.svg",
+                    "position":[2,0,0],
+                    "rotation":[0, 1.5707963267948966, 0]
+                },
+                {
+                    "name": "Git",
+                    "url": "assets/tech/git.png",
+                    "position":[-2,0,0],
+                    "rotation":[0, -1.5707963267948966, 0]
+                }
+            ]
         }
     ],
     "footer": [

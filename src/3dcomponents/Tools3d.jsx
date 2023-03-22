@@ -36,8 +36,6 @@ const Sphere = ({ url }) => {
 }
 
 function Tools3d({ url }) {
-
-    // const icon = useLoader(TextureLoader,'./assets/tech/css.png')
     return (
         <Canvas
             dpr={[1, 2]}
