@@ -2,9 +2,10 @@ import React from "react"
 import Tilt from "react-parallax-tilt"
 
 
-function Portfolio({ data }) {
+function Portfolio({ data,mobile }) {
+
     return (
-        <section className="portfolio section" id="portfolio">
+        <section className="portfolio section" id="Portfolio">
             <div className="container1 text-center">
                 <p className="section-subtitle">What I Did ?</p>
                 <h6 className="section-title mb-6">Portfolio</h6>
@@ -15,7 +16,9 @@ function Portfolio({ data }) {
                                 <a href={ele.url} className="portfolio-card">
                                     <img src={ele.image} className="portfolio-card-img aspect-square"
                                         alt="image" />
-                                    <span className="portfolio-card-overlay">
+                                    <span className={`portfolio-card-overlay ${mobile?'visible':''}`}
+                                        style={mobile?{opacity:1,width:'100%',height:'100%',borderRadius:0}:{}}
+                                    >
                                         <span className="portfolio-card-caption">
                                             <h4>{ele.h4}</h4>
                                             <p className="font-weight-normal">{ele.p}</p>

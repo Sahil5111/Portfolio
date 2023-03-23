@@ -10,10 +10,7 @@ function Navbar({data}) {
         return () => (window.onscroll = null);
     });
 
-    function handleClick(e) {
-        if (e) {
-            e.preventDefault()
-        }
+    function handleClick() {
         setactive(active => !active)
     }
 
@@ -32,7 +29,7 @@ function Navbar({data}) {
                 </div>
                 <ul className={active ? 'nav show' : 'nav'}>
                     {data.navitem.map(item=>(<li className="item" key={item.id} onClick={handleClick} >
-                        <a className="link" href="/" onMouseOver={handleHover} >{item.value}</a>
+                        <a className="link" href={`#${item.value}`} onMouseOver={handleHover} >{item.value}</a>
                     </li>))}
                 </ul>
                 <div className={active ? "hamburger-box hamburger--elastic hamburger is-active" : "hamburger-box hamburger--elastic hamburger "} id="nav-toggle" onClick={handleClick}>

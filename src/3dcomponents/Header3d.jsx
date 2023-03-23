@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef ,Suspense} from "react";
+import React, { useRef ,Suspense} from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
@@ -17,7 +17,7 @@ const Computers = ({ isMobile }) => {
             {/* <hemisphereLight intensity={0.15} groundColor='red' /> */}
             <primitive
                 object={computer.scene}
-                scale={isMobile ? 0.7 : 0.75}
+                scale={isMobile ? 0.6 : 0.75}
                 position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
                 rotation={[-0.01, -0.2, -0.1]}
             />
@@ -25,20 +25,7 @@ const Computers = ({ isMobile }) => {
     );
 };
 
-const Header3d = () => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const mediaQuery = window.matchMedia("(max-width: 500px)");
-        setIsMobile(mediaQuery.matches);
-        const handleMediaQueryChange = (event) => {
-            setIsMobile(event.matches);
-        };
-        mediaQuery.addEventListener("change", handleMediaQueryChange);
-        return () => {
-            mediaQuery.removeEventListener("change", handleMediaQueryChange);
-        };
-    }, []);
+const Header3d = ({isMobile}) => {
 
     return (
         <Canvas
@@ -54,6 +41,7 @@ const Header3d = () => {
                 enableZoom={false}
                 maxPolarAngle={Math.PI / 2}
                 minPolarAngle={Math.PI / 2}
+                enablePan={false}
             />
             <spotLight
                 position={[0, 30, 0]}

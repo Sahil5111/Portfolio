@@ -50,7 +50,7 @@ function Contact() {
     }
 
     return (
-        <section className="section" id="contact">
+        <section className="section" id="Contact">
             <div className="container1 text-center">
                 <p className="section-subtitle">How can you communicate?</p>
                 <h6 className="section-title mb-5">Contact Me</h6>

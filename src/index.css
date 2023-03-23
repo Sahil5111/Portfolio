@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 .header2{
-    background-image: url(./assets/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

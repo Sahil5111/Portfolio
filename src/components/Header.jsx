@@ -6,7 +6,7 @@ import HeaderFallback from "../error/HeaderFallback"
 function Header(props) {
     return (
         <ErrorBoundary fallback={<HeaderFallback data={props.data} />}>
-            <header id="home" className="header2 relative w-full h-screen mx-auto">
+            <header id="Home" className="header2 relative w-full h-screen mx-auto" style={{backgroundImage:'url(./assets/imgs/header.jpg)'}}>
                 <div className="overlay"></div>
                 <div
                     className={`absolute inset-0 top-[120px] mx-width-5 mx-auto sm:px-16 px-6 flex flex-row items-start gap-5 max-h-7`}
@@ -20,7 +20,7 @@ function Header(props) {
                         </p>
                     </div>
                 </div>
-                <Header3d />
+                <Header3d isMobile={props.mobile}/>
             </header >
         </ErrorBoundary>
     )
