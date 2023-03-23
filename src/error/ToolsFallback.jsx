@@ -20,7 +20,7 @@ function Sticker({ url, position, rotation }) {
 const Mesh = ({ data }) => {
     return (
         <Float speed={1.25} rotationIntensity={1} floatIntensity={2}>
-            <mesh>
+            <mesh rotation={[Math.PI/6,Math.PI/4,0]}>
                 <boxGeometry args={[3, 3, 3]} />
                 <meshStandardMaterial
                     color='#fff8eb'

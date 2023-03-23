@@ -21,6 +21,13 @@ function Header(props) {
                     </div>
                 </div>
                 <Header3d isMobile={props.mobile}/>
+                {props.mobile && <div className="w-full h-full absolute top-0 left-0 flex flex-col pointer-events-none">
+                    <div className="h-1/2 w-full pointer-events-auto"></div>
+                    <div className="h-1/2 w-full flex flex-row">
+                        <div className="h-full w-1/4 pointer-events-auto"></div>
+                        <div className="h-full w-1/4 ml-auto pointer-events-auto"></div>
+                    </div>
+                </div>}
             </header >
         </ErrorBoundary>
     )

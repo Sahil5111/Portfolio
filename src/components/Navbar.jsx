@@ -21,7 +21,7 @@ function Navbar({data}) {
 
     return (
         <nav className={top ? "custom-navbar affix-top" : "custom-navbar affix "} data-spy="affix" data-offset-top="20">
-            <div className={`sm:px-16 px-6  w-full flex items-center py-2 fixed top-0 z-20 ${!top?'bg-slate-50':''}`}>
+            <div className={`sm:px-16 px-6  w-full flex items-center py-2 fixed top-0 z-[1000] ${!top?'bg-slate-50':''}`}>
                 <div className="flex">
                     <img src={data.logo} style={{ width: "50px" }} alt="logo" />
                 <a className="logo" href="" style={{pointerEvents:"none"}}>
