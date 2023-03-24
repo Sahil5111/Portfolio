@@ -30,7 +30,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar data={constants.navbar} />
-        <Header data={constants.header} mobile={isMobile} />
+        {/* <Header data={constants.header} mobile={isMobile} /> */}
         <About data={constants.about} />
         <Portfolio data={constants.portfolio} mobile={isMobile} />
         <Tools data={constants.tools} />

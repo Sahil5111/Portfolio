@@ -112,7 +112,7 @@
                     "url": "assets/tech/flutter.svg"
                 },
                 {
-                    "name": "godot",
+                    "name": "Godot",
                     "url": "assets/tech/godot.svg"
                 },
                 {
@@ -120,7 +120,7 @@
                     "url": "assets/tech/tailwind.png"
                 },
                 {
-                    "name": "Three",
+                    "name": "Three JS",
                     "url": "assets/tech/threejs.svg"
                 }
             ]

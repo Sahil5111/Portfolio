@@ -14,9 +14,9 @@ function Tools({ data }) {
                         if (data.type == "fallback" ) return
                         return (
                             <div key={data.id} >
-                                <p className="section-subtitle" >{data.type} tools</p>
+                                <p className="section-subtitle my-2" >{data.type} tools</p>
                                 <div className="flex flex-row flex-wrap justify-center gap-10">
-                                    {data.list.map(tool => (<div className='w-28 h-28' key={tool.name}><Tools3d url={tool.url} /></div>))}
+                                    {data.list.map(tool => (<div className='w-28 h-28' key={tool.name}><Tools3d url={tool.url} name={tool.name}/></div>))}
                                 </div>
                             </div>
                         )
