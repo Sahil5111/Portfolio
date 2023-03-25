@@ -4,19 +4,19 @@
         "navitem": [
             {
                 "id": 0,
-                "value": "Home"
+                "value": "HOME"
             },
             {
                 "id": 1,
-                "value": "About"
+                "value": "ABOUT"
             },
             {
                 "id": 2,
-                "value": "Portfolio"
+                "value": "PORTFOLIO"
             },
             {
                 "id": 3,
-                "value": "Contact"
+                "value": "CONTACT"
             }
         ],
         "logo": "./logo.svg"

@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt"
 function Portfolio({ data,mobile }) {
 
     return (
-        <section className="portfolio section" id="Portfolio">
+        <section className="portfolio section" id="PORTFOLIO">
             <div className="container1 text-center">
                 <p className="section-subtitle">What I Did ?</p>
                 <h6 className="section-title mb-6">Portfolio</h6>

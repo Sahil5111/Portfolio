@@ -29,8 +29,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar data={constants.navbar} />
-        {/* <Header data={constants.header} mobile={isMobile} /> */}
+        <Navbar data={constants.navbar} mobile={isMobile}/>
+        <Header data={constants.header} mobile={isMobile} />
         <About data={constants.about} />
         <Portfolio data={constants.portfolio} mobile={isMobile} />
         <Tools data={constants.tools} />
