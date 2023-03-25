@@ -7,8 +7,8 @@ function About({ data }) {
             <div className="container1 text-center">
                 <div className="about">
                     <div className="about-caption">
-                        <p className="section-subtitle">Who Am I ?</p>
-                        <h2 className="section-title mb-3">About Me</h2>
+                        <p className="section-subtitle text-center">Who Am I ?</p>
+                        <h2 className="section-title mb-3 text-center">About Me</h2>
                         <p>
                             {data.data.map(para => (<span key={para.para} >{para.value}<br /></span>))}
                         </p>

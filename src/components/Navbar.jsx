@@ -25,9 +25,9 @@ function Navbar({ data,mobile }) {
                 if (index < iteration) return value[index]
                 return Chars[Math.floor(Math.random() * 26)]
             }).join('')
-            value.length < 8 ? iteration += 1 / 3 : iteration += 1 / 2
+            value.length < 8 ? iteration += 1 / 4 : iteration += 1 / 3
             if (iteration > value.length) clearInterval(myinterval)
-        }, 35)
+        }, 30)
     }
 
     return (
@@ -40,7 +40,7 @@ function Navbar({ data,mobile }) {
                 </div>
                 <ul className={active ? 'nav show' : 'nav'}>
                     {data.navitem.map(item => (<li className="item" key={item.id} onClick={handleClick} >
-                        <a className="link" href={`#${item.value}`} onMouseOver={e => handleHover(e, item.value)} data-value={item.value} >{item.value}</a>
+                        <a className="link font-mono font-extrabold" href={`#${item.value}`} onMouseOver={e => handleHover(e, item.value)} data-value={item.value} >{item.value}</a>
                     </li>))}
                 </ul>
                 <div className={active ? "hamburger-box hamburger--elastic hamburger is-active" : "hamburger-box hamburger--elastic hamburger "} id="nav-toggle" onClick={handleClick}>
