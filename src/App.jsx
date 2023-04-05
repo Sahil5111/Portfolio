@@ -33,7 +33,7 @@ function App() {
         <Header data={constants.header} mobile={isMobile} />
         <About data={constants.about} />
         <Portfolio data={constants.portfolio} mobile={isMobile} />
-        <Tools data={constants.tools} />
+        <Tools data={constants.tools} mobile={isMobile}/>
         <Contact />
         <Footer data={constants.footer} />
       </BrowserRouter>
